@@ -23,5 +23,10 @@ Dostępne do wykorzystania metody to:
 |public int getHistorySize()|
 |public void setHistorySize(int historySize)|
 
+Metoda append odpowiada za dodawanie wiadomości.
+Metoda setColor ustawia kolor, w którym wyświetlane są wiadomości.
+Metoda getHistorySize zwraca aktualny rozmiar bufora (dla 0 bufor nieograniczony).
+Metoda setHistorySize ustawia aktualny rozmiar bufora.
+
 ### Technologia
 Wykorzystane zostały biblioteki JavaFX wchodzące w skład JDK 1.8.
