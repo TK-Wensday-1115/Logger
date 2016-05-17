@@ -32,8 +32,8 @@ public class Logger extends ScrollPane{
         loggingView.setEditable(false);
     }
 
-    public void append(final String content) {
-        final String message = dateFormat.format(new Date()) + " " + content + "\n";
+    public void append(final Date date, final String content) {
+        final String message = dateFormat.format(date) + " " + content + "\n";
         int spaceNeeded = message.length();
         try {
             try {

@@ -9,6 +9,7 @@ import logger.component.Logger;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Date;
 
 public class DemoApp extends Application{
 
@@ -39,7 +40,7 @@ public class DemoApp extends Application{
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
-                    logger.append(line);
+                    logger.append(new Date(), line);
                 }
                 try {
                     buffer.close();
